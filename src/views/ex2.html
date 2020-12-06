@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomelo Test</title>
+</head>
+<style>
+    table {
+        width: 100%;
+    }
+
+    table, th, td {
+        border: 1px solid lightgrey;
+        border-collapse: collapse;
+    }
+
+    th, td {
+        padding: 2px 4px;
+    }
+</style>
+<body>
+    <h1>Ex2</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>URL</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{#each data}}
+            <tr>
+                <td>{{this.id}}</td>
+                <td>{{this.name}}</td>
+                <td><a href={{this.html_url}}>{{this.html_url}}</a></td>
+                <td>{{this.description}}</td>
+            </tr>
+            {{/each}}
+        </tbody>
+    </table>
+    <div>
+</body>
+
+</html>
