@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                 echo '123'
+                 make test
             }
         }
     }
